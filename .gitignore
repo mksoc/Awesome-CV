@@ -16,8 +16,11 @@
 ## Vim & Emacs temp files:
 .*sw[op]
 *~
+## vscode folder:
+.vscode/
 
 ### Mac OS X ###
 ## Mac OS X metadata files:
 *.DS_Store
+
 
