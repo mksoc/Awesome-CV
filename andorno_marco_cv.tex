@@ -1,0 +1,106 @@
+% !TeX program = xelatex
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper, table]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/] 
+
+%%% Configure a directory location for sections
+%\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-skyblue}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+\definecolor{darktext}{HTML}{000000}
+\definecolor{text}{HTML}{000000}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor} 
+\usepackage{array}
+\newcommand*{\SignatureAndDate}{%
+    \par\noindent\makebox[2in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}%
+    \par\noindent\makebox[2in][l]{Data}      \hfill\makebox[2.0in][l]{Firma}%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Marco}{Andorno}
+\address{Via Piave 20, 10099 San Mauro Torinese (TO), Italy}
+\mobile{(+39) 339 6974273} 
+%%% Social
+\email{andorno.marco@gmail.com}
+%\homepage{www.posquit0.com}
+\github{mksoc}
+\linkedin{marco-andorno}
+%%% Optionals
+%\position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
+%\quote{``Make the change that you want to see in the world."}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter 
+  {\today}
+  {Marco Andorno ~~~·~~~ Curriculum Vitae}
+  {\thepage}
+
+\begin{document}
+%%% Make a header for CV with personal data
+\makecvheader
+
+%%% Import contents
+\import{resume/}{ma_experience.tex}
+\import{resume/}{ma_education.tex}
+\import{resume/}{ma_extracurricular.tex}
+\import{resume/}{ma_honors.tex}
+\import{resume/}{ma_skills.tex}
+%\import{/resume}{grades.tex}
+%\import{/resume}{committees.tex}
+
+% \vfill
+% \skillsetstyle{\emph{Autorizzo il trattamento dei miei dati personali ai sensi del D. Lgs. 196/2003.\newline
+% Dichiaro che quanto riportato nel presente Curriculum Vitae corrisponde a verità ai sensi del D.P.R. 445/2000.}}
+% \vspace{1cm}
+% \clearpage
+
+\end{document}
